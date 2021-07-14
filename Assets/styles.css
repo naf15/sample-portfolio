@@ -13,8 +13,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1% 3%;
-  background-image: linear-gradient(to bottom right, rgba(36, 39, 53, 0.986), rgba(23, 31, 68, 0.979));
-  color: #fff;
+  background-image: linear-gradient(to bottom right, rgba(36, 39, 53, 0.945), rgba(23, 31, 68, 0.911));
   position: fixed;
   width: 100%; 
   z-index: 1;
@@ -23,7 +22,7 @@ header {
 
 h1 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .nav-bar ul {
@@ -47,7 +46,6 @@ h1 {
   text-shadow:#fff;
 }
 
-
 body {
   background-image: linear-gradient(to bottom right, rgb(34, 34, 34), rgb(68, 68, 68));
   display: flex;
@@ -56,14 +54,15 @@ body {
 }
 
 main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   position:relative;
   top: 100px;
   text-align: center;
 }
 
 img {
-  width: 500px;
-  height: 500px;
   box-shadow: rgb(39, 39, 39) 1px 1px 1px 1px;
   border-radius: 30px;
   margin-top: 100px;  
@@ -76,13 +75,49 @@ p {
 
 footer {
   position:relative;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
   top: 100px;
-  border: whitesmoke 3px dashed;
+  border-top: whitesmoke 1px solid;
   text-align: center;
+  padding: 1%;
+  background-color:rgb(85, 46, 15);
 }
 
 h2 {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
+  text-transform: uppercase;
+  margin: 2%;
+}
+
+.contact-form {
+  padding: 10px;
+  border:rgb(165, 165, 165) solid 3px;
+  border-radius: 15px;
+  width: 300px;
+}
+.contact-form *{
+  margin: 10px;
+}
+
+.contact-form input {
+  color:rgb(39, 39, 39);
+}
+
+.contact-form button{
+  width: 150px;
+  height: 30px;
+  background-color: rgb(218, 72, 5);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.contact-form button:hover {
+  background-color: rgb(255, 83, 4)
 }
