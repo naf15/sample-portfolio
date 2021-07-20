@@ -13,8 +13,9 @@
       <h1>Nafis's Portfolio</h1>
       <nav class="nav-bar">
         <ul>
+          <li><a href="#about-me">About Me</a></li>
           <li><a target="_blank" href="https://github.com/naf15?tab=repositories">Github</a></li>
-          <li><a target="_blank" href="https://github.com/naf15">Portfolio</a></li>
+          <li><a href="#portfolio" href="https://github.com/naf15">Portfolio</a></li>
           <li><a href="#contact-me">Contact Me</a></li>
         </ul>
       </nav>     
@@ -23,11 +24,35 @@
     <!-- The main section sits in the middle of the page and contains a picture along with some text underneath -->
     
     <main>
-      <img
-        alt="Picture of Nafis Rahman"
-        src="https://avatars.githubusercontent.com/u/78117816?s=400&v=4"/>
-      <p>I am a coding enthusiast with a background in Mathematics and Financial Engineering. My portfolio both reflect my experience as a quantitative analyst as well as my interest in full-stack web development. I hope to combine my knowledge of mathematics with knowledge of web development to create useful applications.</p>
+      <article id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <img
+          alt="Picture of Nafis Rahman"
+          src="https://avatars.githubusercontent.com/u/78117816?s=400&v=4"/>
+        <p>I am a coding enthusiast with a B.S. in Mathematics and an M.S. in Financial Engineering from NYU. My portfolio both reflect my experience as a quantitative analyst as well as my interest in full-stack web development. I hope to combine my knowledge of mathematics with knowledge of web development to create useful applications.</p>
+      </article>
+      
+       <!-- Portfolio items represented in card form -->
+
+      <article id="portfolio">
+        <h2>Portfolio</h2>
+        <section class="portfolio-cards">
+          <div class="portfolio-card">
+            <h3>Project 1</h3>
+            <img>
+          </div>
+          <div class="portfolio-card">
+            <h3>Project 2</h3>
+            <img>
+          </div>
+          <div class="portfolio-card">
+            <h3>Project 3</h3>
+            <img>
+          </div>
+        </section> 
+      </article>
     </main>
+
 
     <!-- The footer contains a form that allows the user to input contact information -->
 
