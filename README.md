@@ -1,49 +1,96 @@
-# Unit 01 Mini-Project: Landing Page
+# 02 Advanced CSS: Portfolio
 
-This is a landing page that contains Nafis Rahman's coding profile. It is intended to showcase his portfolio of work and capture the contact information of anyone wanting to reach out to him.
+## Your Task
+
+Welcome to this week's homework! This is an even-numbered week, so you won't be given any starter code. Instead, you'll create a web application from scratch! This week, you'll build a portfolio page, which you can add to as the course progresses. 
+
+A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: having several deployed projects is a minimum requirement to receive an initial interview at many companies. 
+
+With these points in mind, in this homework you’ll set yourself up for future success by applying the core skills you've recently learned: flexbox, media queries, and CSS variables. You'll get to practice your new skills while creating something that you will use during your job search. It’s a win-win that you'll likely be grateful for in the future!
+
+**Note:** If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course.
+
+Let’s take a look at what a user story written from the perspective of a hiring manager might look like. As you might remember from your first homework, we follow the AS AN / I WANT / SO THAT format. 
+
+
+## User Story
+
+```
+AS AN employer
+I WANT to view a potential employee's deployed portfolio of work samples
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+```
 
 
 ## Acceptance Criteria
 
-* It's done when the page uses semantic HTML elements.
+Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
-* It's done when the page uses universal, element, and class selectors in CSS.
-
-* It's done when the page features at least three colors in the design.
-
-* It's done when the page uses a single font and font family for all text.
-
-* It's done when the page uses at least two heading elements (`<h1>` through `<h6>`).
-
-* It's done when the header is fixed to the top of the page on scroll.
-
-* It's done when the header contains a navigation bar with three links that display inline, including a contact link.
-
-* It's done when, if the contact link is clicked, the page jumps directly to the contact form.
-
-* It's done when the contact form includes `input` elements for name and email.
-
-* It's done when the contact form includes a Send button.
-
-* It's done when the image includes a descriptive `alt` attribute.
-
-* It's done when the page is deployed to GitHub Pages.
+```
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+```
 
 
+## Mock-Up
 
-## Usage
+The following animation shows the web application's appearance and functionality:
 
-This page contains a heading with links to:
-* Github Repository
-* Github Profile
-* Contact Me
-
-The main section contains a profile picture of Nafis Rahman followed by a small biography about his educational background.
-
-The footer contains a form that can be filled out that contains the users:
-* Name
-* Email Address
+![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
 
 
-![Screenshot](assets/images/NafisImage.png)
+## Grading Requirements
 
+This homework is graded based on the following criteria: 
+
+### Technical Acceptance Criteria: 40%
+
+* Satisfies all of the above acceptance criteria.
+
+### Deployment: 32%
+
+* Application deployed at live URL.
+
+* Application loads with no errors.
+
+* Application GitHub URL submitted.
+
+* GitHub repository contains application code.
+
+### Application Quality: 15%
+
+* Application resembles the mock-up functionality provided in the homework instructions.
+
+### Repository Quality: 13%
+
+* Repository has a unique name.
+
+* Repository follows best practices for file structure and naming conventions.
+
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+* Repository contains multiple descriptive commit messages.
+
+* Repository contains quality readme with description, screenshot, link to deployed application.
+
+## Review
+
+You are required to submit BOTH of the following for review:
+
+* The URL of the deployed application.
+
+* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
+
+- - -
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

@@ -8,10 +8,14 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom right, rgb(34, 34, 34), rgb(68, 68, 68));
+  /* background-image: linear-gradient(to bottom right, rgb(167, 166, 166), rgb(255, 255, 255)); */
   display: flex;
   flex-direction: column;
   line-height: 1.3;
+  background-color:rgb(34, 34, 34);
+  background-image: url(./images/max-saeling-Whl4hLb6gPU-unsplash.jpg);
+  background-size: cover;
+  background-position-y: center;
 }
 
 /* Nav bar and title styling */
@@ -26,6 +30,7 @@ header {
   width: 100%; 
   z-index: 1;
   border-bottom: rgb(167, 167, 167) solid 1px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 h1 {
@@ -43,6 +48,7 @@ h1 {
 
 .nav-bar li {
   list-style-type: none;
+  text-align: center;
 }
 
 .nav-bar a {
@@ -64,12 +70,18 @@ main {
   align-items: center;
   flex-direction: column;
   position:relative;
-  top: 100px;
   text-align: center;
 }
 
+.about-me {
+  width: 100%;
+  padding-top: 100px;
+  background-image: linear-gradient(to bottom right, rgb(0 0 0 / 78%), rgb(0 0 0 / 88%));
+  box-shadow: 3px 0px 20px 0px rgb(0 0 0 / 89%);
+}
+
 .about-me img {
-  box-shadow: rgb(39, 39, 39) 1px 1px 1px 1px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 30px;
   margin-top: 10px;  
 }
@@ -79,12 +91,26 @@ main {
   text-align: center;
 }
 
-.portfolio-cards {
+#portfolio {
+  padding: 3%;
   display: flex;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.233);
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.portfolio-cards {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 112%;
+  background-color: rgb(4 26 47 / 65%);
+  align-items: center;
+  justify-content: space-around;
   margin: 100px 0px;
+  box-shadow: 2px 4px 20px 0px rgb(0 0 0 / 89%);
+  border-radius: 15px;
 }
 
 .portfolio-card {
@@ -93,13 +119,13 @@ main {
   border: rgba(255, 255, 255, 0.602) dashed 2px;
   border-radius: 10px;
   flex-wrap: wrap;
-  margin: 20px;
   position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .portfolio-card:hover {
-  height: 210px;
-  width: 210px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 } 
 
 /* Styles for the contact form sitting at the bottom of the page */
@@ -113,16 +139,18 @@ footer {
   border-top: whitesmoke 1px solid;
   text-align: center;
   padding: 1%;
-  background-color:rgb(85, 46, 15);
+  background-image: linear-gradient(to bottom right, rgb(163, 83, 46), rgb(82, 26, 26));
   height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 h2 {
-  color: white;
-  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.726);
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   margin: 2%;
+  font-weight: lighter;
 }
 
 .contact-form {
@@ -154,4 +182,19 @@ h2 {
 
 .contact-form button:hover {
   background-color: rgb(255, 83, 4)
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  } 
+  .nav-bar ul {
+    flex-direction: column;
+  }
+  .about-me {
+    padding-top: 180px;
+  }
+  header {
+    padding: 3% 3%;
+  }
 }
