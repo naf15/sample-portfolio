@@ -102,8 +102,6 @@ main {
 }
 
 .portfolio-cards {
-  padding-top: 3%;
-  padding-bottom: 3%;
   display: flex;
   flex-wrap: wrap;
   width: 112%;
@@ -113,6 +111,7 @@ main {
   margin: 100px 0px;
   box-shadow: 2px 4px 20px 0px rgb(0 0 0 / 89%);
   border-radius: 15px;
+  padding: 6%;
 }
 
 .portfolio-card {
